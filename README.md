@@ -1,0 +1,5 @@
+# Python module for sending reminder notifications
+
+This utilizes the msmtp command line tool to connect a gmail account to an smtp server, which is then used to send emails and texts to a personal phone or email account for the purpose of recieving reminders. It initiates a cron job that will text or email a notification at a specified time either until turned off or on a specific day. It stores notification and user info in a json file to allow the Notification and User classes to be initilized to the same state and redeploy or modify previous notifications. 
+
+I need to actually finish configuring the cron job aspect of it as well as test the reminder system for a few days. This will require the msmtp command line tool to already be installed, as well as access to a compatible email account that works with an smtp server. This will only work on Unix like OS's as it's on shell scripts. 
